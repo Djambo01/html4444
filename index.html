@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <h1 class="logo">Интернет-магазин электроники</h1>
+</head>
+<body>
+    
+
+    <!-- Переключатель тем -->
+    <div class="theme-toggle">
+        <button id="themeButton">Сменить тему</button>
+    </div>
+
+    <header>
+        <h1>Интернет-магазин электроники</h1>
+        <nav>
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="grid-container">
+
+            <aside>
+                <h3>Фильтры товаров</h3>
+                <ul>
+                    <li><a href="#">Смартфоны</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Телевизоры</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                </ul>
+            </aside>
+
+
+            <section id="catalog">
+                <h2>Каталог товаров</h2>
+                <div class="products">
+
+                    <article>
+                        <figure>
+                            <picture>
+                                <img src="./picture/00_638188158831366569.jpg" alt="Смартфон Apple">
+                            </picture>
+                            <figcaption>Смартфон Apple</figcaption>
+                        </figure>
+                        <p>Цена: 90 000 руб.</p>
+                        <p>Отличный смартфон с большим экраном и мощной батареей.</p>
+                        <button class="buy-btn">Купить</button>
+                        <button class="details-btn">Подробнее</button>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <picture>
+                                <img src="./picture/modal_trade_in__k5xx81wg61ei_large.jpg" alt="Ноутбук HP">
+                            </picture>
+                            <figcaption>Ноутбук HP</figcaption>
+                        </figure>
+                        <p>Цена: 70 000 руб.</p>
+                        <p>Мощный ноутбук для работы и игр.</p>
+                        <button class="buy-btn">Купить</button>
+                        <button class="details-btn">Подробнее</button>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы продаем только лучшую электронику! Надежность, качество и гарантия.</p>
+    </section>
+
+
+    <footer id="contacts">
+        <p>&copy; 2024 Интернет-магазин электроники. Все права защищены.</p>
+        <p><a href="#">Политика конфиденциальности</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

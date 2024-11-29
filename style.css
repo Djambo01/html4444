@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color, #f4f4f9);
+    color: var(--text-color, #333);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+/* Переключатель темы */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+#themeButton {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#themeButton:hover {
+    background-color: #16a085;
+}
+
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+}
+
+.dark-theme {
+    --bg-color: #2c3e50;
+    --text-color: #f4f4f9;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        order: 2;
+    }
+}
+
+aside {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+aside h3 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+aside ul li a::after {
+    content: '›';
+    position: absolute;
+    right: -15px;
+    color: #3498db;
+}
+
+aside ul li a:hover {
+    color: #1abc9c;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+article.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #555;
+}
+
+article p {
+    margin: 5px 0;
+}
+
+.buy-btn, .details-btn {
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-btn {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.buy-btn:hover {
+    background-color: #16a085;
+}
+
+.details-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.details-btn:hover {
+    background-color: #2980b9;
+}
+
+section#about {
+    padding: 20px;
+    background-color: #ecf0f1;
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.logo {
+    font-size: 2em;
+    color: #1abc9c;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #16a085;
+}
+.logo {
+    font-size: 2em;
+    color: #1abc9c;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #16a085;
+}
